@@ -104,14 +104,12 @@ export function getGalleryData(): GalleryFolder[] {
 export function getPlaylist(folders: GalleryFolder[]): string[] {
   const routes: string[] = [APP_BASE || '/'];
   for (const folder of folders) {
-    const moduloUrl = `${APP_BASE}/modulo/${folder.id}`;
-    // 1. Entra al módulo padre
-    routes.push(moduloUrl);
+    // 1. Entra a la caja/módulo (vista de grilla general)
+    routes.push(`${APP_BASE}/modulo/${folder.id}`);
     
-    // 2. Por cada hijo: entra al detalle en zoom y luego vuelve al padre para mostrar la grilla antes del siguiente hijo
+    // 2. Muestra Card 1, Card 2, Card 3... en pantalla completa consecutivamente
     for (const item of folder.items) {
       routes.push(`${APP_BASE}/pantalla/${folder.id}/${item.id}`);
-      routes.push(moduloUrl);
     }
   }
   return routes;
