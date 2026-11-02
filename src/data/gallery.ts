@@ -1,5 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { marked } from 'marked';
+
+export interface PrompterTab {
+  id: string;
+  title: string;
+  html: string;
+}
 
 export interface GalleryItem {
   id: string;          // e.g. "listado"
@@ -113,4 +120,49 @@ export function getPlaylist(folders: GalleryFolder[]): string[] {
     }
   }
   return routes;
+}
+
+export function getPrompterData(): PrompterTab[] {
+  const filePath = path.resolve('./material/guion_comercial_juanfer_shop.md');
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  // Dividir por bloques: ### [TAB:id] Titulo de pestaña
+  const tabRegex = /###\s*\[TAB:([a-zA-Z0-9_-]+)\]\s*([^\n]+)/g;
+  const matches = [...raw.matchAll(tabRegex)];
+
+  if (matches.length === 0) {
+    // Si no tiene tags, devolver todo como una sola pestaña general
+    return [{ id: 'general', title: 'Guión General', html: marked.parse(raw) as string }];
+  }
+
+  const tabs: PrompterTab[] = [];
+
+  for (let i = 0; i < matches.length; i++) {
+    const match = matches[i];
+    const tabId = match[1];
+    const tabTitle = match[2].trim();
+    const startIndex = match.index! + match[0].length;
+    const nextMatch = matches[i + 1];
+    const endIndex = nextMatch ? nextMatch.index! : raw.length;
+
+    let contentMd = raw.slice(startIndex, endIndex).trim();
+    // Limpieza de divisores markdown al final del bloque si existen
+    contentMd = contentMd.replace(/---\s*$/, '').trim();
+
+    // Reemplazos estéticos opcionales para cajas de pase de micrófono
+    contentMd = contentMd.replace(/:::cue([\s\S]*?):::/g, '<div class="prompter-cue">$1</div>');
+
+    const html = marked.parse(contentMd) as string;
+
+    tabs.push({
+      id: tabId,
+      title: tabTitle,
+      html
+    });
+  }
+
+  return tabs;
 }
