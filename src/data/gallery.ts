@@ -56,6 +56,33 @@ function sanitizeId(rawName: string): string {
     .replace(/^-|-$/g, '');
 }
 
+const MODULE_METADATA: Record<string, { description: string; speaker: string }> = {
+  'modelo-canvas': {
+    description: 'Diagnóstico de fricciones en e-commerce, propuesta de valor D2C y lienzo de 9 bloques.',
+    speaker: 'Juani'
+  },
+  'estrategia-de-mercado': {
+    description: 'Datos CACE, diferenciación Porter, FODA cruzado y balance de catálogo en Matriz BCG.',
+    speaker: 'Juan M.'
+  },
+  'tecnologia-y-plataforma': {
+    description: 'Plataforma propia React 19 + Firestore vs WooCommerce, latencia <1,2s y 85% ahorro en cloud.',
+    speaker: 'Juani'
+  },
+  'marco-legal-y-gantt': {
+    description: 'Sociedad por Acciones Simplificada (Ley 27.349), blindaje patrimonial y Gantt de 8 semanas.',
+    speaker: 'Juani & Juan M.'
+  },
+  'costos-laborales-y-logistica': {
+    description: 'Nómina formal (5 dependientes), factor multiplicador de cargas (1,48x) y alianza Fulfillment Full.',
+    speaker: 'Fer & Juan M.'
+  },
+  'evaluacion-financiera': {
+    description: 'Capex inicial ($7,25M autofinanciado), Punto de Equilibrio y proyección neta a 12 meses (+$52M).',
+    speaker: 'Fer'
+  }
+};
+
 export function getGalleryData(): GalleryFolder[] {
   const galeriaDir = path.resolve('./public/galeria');
   
@@ -75,6 +102,10 @@ export function getGalleryData(): GalleryFolder[] {
     const folderPath = path.join(galeriaDir, dir.name);
     const folderId = sanitizeId(dir.name) || `folder-${index + 1}`;
     const folderTitle = formatTitle(dir.name);
+    const meta = MODULE_METADATA[folderId] ?? {
+      description: `Defensa temática y análisis cuantitativo del módulo ${folderTitle}.`,
+      speaker: 'Equipo'
+    };
 
     const fileEntries = fs.readdirSync(folderPath, { withFileTypes: true });
     const imageFiles = fileEntries
@@ -99,7 +130,7 @@ export function getGalleryData(): GalleryFolder[] {
     folders.push({
       id: folderId,
       title: folderTitle,
-      description: `Módulo ${folderTitle} - ${items.length} vistas disponibles.`,
+      description: meta.description,
       themeColor: THEME_COLORS[index % THEME_COLORS.length],
       items
     });
