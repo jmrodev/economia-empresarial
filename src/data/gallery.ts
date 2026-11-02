@@ -17,6 +17,8 @@ export interface GalleryFolder {
   items: GalleryItem[];
 }
 
+export const APP_BASE = (import.meta.env.BASE_URL ?? '').replace(/\/$/, '');
+
 const THEME_COLORS = [
   '#3b82f6', // blue
   '#8b5cf6', // purple
@@ -81,7 +83,7 @@ export function getGalleryData(): GalleryFolder[] {
         id: itemId,
         title: formatTitle(baseName),
         file: file.name,
-        url: `${import.meta.env.BASE_URL.replace(/\/$/, '')}/galeria/${dir.name}/${file.name}`,
+        url: `${APP_BASE}/galeria/${dir.name}/${file.name}`,
         // Nombre de transición único y consistente en cualquier vista:
         transitionName: `view-${folderId}-${itemId}`
       };
@@ -100,16 +102,15 @@ export function getGalleryData(): GalleryFolder[] {
 }
 
 export function getPlaylist(folders: GalleryFolder[]): string[] {
-  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-  const routes: string[] = [base || '/'];
+  const routes: string[] = [APP_BASE || '/'];
   for (const folder of folders) {
-    const moduloUrl = `${base}/modulo/${folder.id}`;
+    const moduloUrl = `${APP_BASE}/modulo/${folder.id}`;
     // 1. Entra al módulo padre
     routes.push(moduloUrl);
     
     // 2. Por cada hijo: entra al detalle en zoom y luego vuelve al padre para mostrar la grilla antes del siguiente hijo
     for (const item of folder.items) {
-      routes.push(`${base}/pantalla/${folder.id}/${item.id}`);
+      routes.push(`${APP_BASE}/pantalla/${folder.id}/${item.id}`);
       routes.push(moduloUrl);
     }
   }

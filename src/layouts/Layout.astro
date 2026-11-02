@@ -1,13 +1,12 @@
 ---
 import { ClientRouter } from 'astro:transitions';
-import { getGalleryData, getPlaylist } from '../data/gallery';
+import { getGalleryData, getPlaylist, APP_BASE } from '../data/gallery';
 
 interface Props {
   title?: string;
 }
 
 const { title = 'JuanFer Shop S.A.S. - Presentación' } = Astro.props;
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const folders = getGalleryData();
 const playlist = getPlaylist(folders);
 ---
@@ -216,7 +215,7 @@ const playlist = getPlaylist(folders);
       <button id="toggle-prompter" class="control-pill" title="Abrir Guión / Prompter de Práctica (Tecla P)">
         🎙️ Guión
       </button>
-      <a href={`${base}/`} class="control-pill" title="Volver al inicio (Tecla Home o Escape)">
+      <a href={`${APP_BASE}/`} class="control-pill" title="Volver al inicio (Tecla Home o Escape)">
         🏠 Módulos
       </a>
       <button id="toggle-autoplay" class="control-pill" title="Pausar o activar auto-recorrido (Barra Espaciadora)">
@@ -448,7 +447,7 @@ const playlist = getPlaylist(folders);
           e.preventDefault();
           const prevIndex = (currentIndex - 1 + playlist.length) % playlist.length;
           navigate(playlist[prevIndex]);
-        } else if (e.key === ' ' && e.target === document.body) {
+        } else if (e.key === ' ' && !['BUTTON', 'A', 'INPUT', 'TEXTAREA'].includes(e.target?.tagName)) {
           e.preventDefault();
           toggleAutoplay();
         } else if (e.key === 'f' || e.key === 'F') {
