@@ -288,6 +288,25 @@ const prompterTabs = getPrompterData();
         }
       }
 
+      function getCurrentIndex(playlist) {
+        if (!playlist || playlist.length === 0) return 0;
+        const rawPath = window.location.pathname;
+        const cleanPath = rawPath.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
+
+        // 1. Coincidencia exacta limpia
+        let idx = playlist.indexOf(cleanPath);
+        if (idx !== -1) return idx;
+
+        // 2. Coincidencia decodificada por caracteres especiales
+        const decoded = decodeURIComponent(cleanPath);
+        idx = playlist.indexOf(decoded);
+        if (idx !== -1) return idx;
+
+        // 3. Fallback tolerante por coincidencia de subcadena
+        idx = playlist.findIndex(p => p === cleanPath || cleanPath.endsWith(p) || p.endsWith(cleanPath));
+        return idx !== -1 ? idx : 0;
+      }
+
       function stepLoop() {
         const playlist = getPlaylistData();
         if (playlist.length === 0) return;
@@ -296,10 +315,7 @@ const prompterTabs = getPrompterData();
         const isRunning = sessionStorage.getItem('demo_autoplay') === 'true';
         if (!isRunning) return;
 
-        let currentPath = window.location.pathname.replace(/\/$/, '') || '/';
-        let currentIndex = playlist.indexOf(currentPath);
-        if (currentIndex === -1) currentIndex = 0;
-
+        const currentIndex = getCurrentIndex(playlist);
         const nextIndex = (currentIndex + 1) % playlist.length;
         const nextUrl = playlist[nextIndex];
 
@@ -333,9 +349,7 @@ const prompterTabs = getPrompterData();
         const playlist = getPlaylistData();
         if (playlist.length === 0) return;
 
-        let currentPath = window.location.pathname.replace(/\/$/, '') || '/';
-        let currentIndex = playlist.indexOf(currentPath);
-        if (currentIndex === -1) currentIndex = 0;
+        const currentIndex = getCurrentIndex(playlist);
 
         if (e.key === 'ArrowRight' || e.key === 'PageDown') {
           e.preventDefault();
