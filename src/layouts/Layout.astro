@@ -98,6 +98,114 @@ const playlist = getPlaylist(folders);
         border-color: rgba(56, 189, 248, 0.4);
         background: rgba(56, 189, 248, 0.12);
       }
+
+      /* Estilos del Prompter / Panel de Práctica */
+      #prompter-modal {
+        position: fixed;
+        bottom: 4rem;
+        right: 1.5rem;
+        width: min(480px, calc(100vw - 3rem));
+        max-height: min(680px, calc(100vh - 5.5rem));
+        background: rgba(11, 15, 25, 0.95);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 18px;
+        box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(56, 189, 248, 0.25);
+        z-index: 100;
+        display: none;
+        flex-direction: column;
+        color: #f1f5f9;
+        overflow: hidden;
+        animation: prompterSlideUp 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      #prompter-modal.visible {
+        display: flex;
+      }
+      @keyframes prompterSlideUp {
+        from { opacity: 0; transform: translateY(14px) scale(0.97); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      .prompter-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.85rem 1.25rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(15, 23, 42, 0.75);
+      }
+      .prompter-tabs {
+        display: flex;
+        background: rgba(15, 23, 42, 0.9);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.4rem;
+        gap: 0.35rem;
+      }
+      .prompter-tab-btn {
+        flex: 1;
+        background: transparent;
+        border: 1px solid transparent;
+        color: #94a3b8;
+        padding: 0.5rem 0.4rem;
+        border-radius: 8px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+      }
+      .prompter-tab-btn:hover {
+        color: #f8fafc;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .prompter-tab-btn.active {
+        color: #38bdf8;
+        background: rgba(56, 189, 248, 0.15);
+        border-color: rgba(56, 189, 248, 0.35);
+      }
+      .prompter-content {
+        padding: 1.25rem;
+        overflow-y: auto;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: #cbd5e1;
+        flex: 1;
+      }
+      .prompter-content::-webkit-scrollbar {
+        width: 6px;
+      }
+      .prompter-content::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+      }
+      .prompter-quote {
+        background: rgba(30, 41, 59, 0.5);
+        border-left: 3px solid #38bdf8;
+        padding: 0.65rem 0.85rem;
+        margin: 0.6rem 0 0.85rem;
+        border-radius: 0 8px 8px 0;
+        font-size: 0.88rem;
+        color: #f1f5f9;
+      }
+      .prompter-pill {
+        display: inline-block;
+        background: rgba(16, 185, 129, 0.15);
+        color: #34d399;
+        font-weight: 700;
+        padding: 0.1rem 0.45rem;
+        border-radius: 4px;
+        font-size: 0.82rem;
+      }
+      .prompter-cue {
+        margin-top: 1rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background: rgba(245, 158, 11, 0.12);
+        color: #fbbf24;
+        border: 1px dashed rgba(245, 158, 11, 0.35);
+      }
     </style>
   </head>
   <body>
@@ -105,6 +213,9 @@ const playlist = getPlaylist(folders);
 
     <!-- Barra flotante discreta de control para la presentación -->
     <div style="position: fixed; bottom: 1rem; right: 1.5rem; display: flex; align-items: center; gap: 0.5rem; z-index: 50;">
+      <button id="toggle-prompter" class="control-pill" title="Abrir Guión / Prompter de Práctica (Tecla P)">
+        🎙️ Guión
+      </button>
       <a href={`${base}/`} class="control-pill" title="Volver al inicio (Tecla Home o Escape)">
         🏠 Módulos
       </a>
@@ -114,6 +225,127 @@ const playlist = getPlaylist(folders);
       <button id="toggle-fullscreen" class="control-pill" title="Pantalla completa (Tecla F)">
         ⛶ Pantalla Completa
       </button>
+    </div>
+
+    <!-- Modal / Prompter para Ensayar la Presentación -->
+    <div id="prompter-modal" aria-hidden="true">
+      <div class="prompter-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.1rem;">🎙️</span>
+          <div>
+            <h3 style="margin: 0; font-size: 0.95rem; font-weight: 700; color: #f8fafc;">Guión de Práctica</h3>
+            <span style="font-size: 0.75rem; color: #94a3b8;">Pitch Comercial de Inversión • ISFD 166</span>
+          </div>
+        </div>
+        <button id="close-prompter" style="background: transparent; border: none; color: #94a3b8; font-size: 1.25rem; cursor: pointer; padding: 0.2rem 0.5rem; border-radius: 6px; line-height: 1;">
+          ✕
+        </button>
+      </div>
+
+      <!-- Pestañas por Disertante -->
+      <div class="prompter-tabs">
+        <button class="prompter-tab-btn active" data-tab="juani">
+          1. Juani (0-5m)
+        </button>
+        <button class="prompter-tab-btn" data-tab="juanm">
+          2. Juan M. (5-10m)
+        </button>
+        <button class="prompter-tab-btn" data-tab="fer">
+          3. Fer (10-15m)
+        </button>
+      </div>
+
+      <!-- Contenido Juani -->
+      <div id="tab-juani" class="prompter-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <strong style="color: #38bdf8; font-size: 0.85rem;">PARTE 1: La Oportunidad, la Marca y el Software</strong>
+          <span class="prompter-pill">00:00 - 05:00 min</span>
+        </div>
+
+        <p class="prompter-quote">
+          "Buenas tardes. Hoy no venimos solo a presentar un trabajo de cátedra, venimos a presentarles <strong>JuanFer Shop S.R.L.</strong>: una oportunidad de inversión real en la intersección de dos industrias de alto crecimiento en Argentina: el e-commerce Direct-to-Consumer y la venta de productos premium de tecnología y estilo de vida."
+        </p>
+
+        <p><strong>¿Qué problema resolvemos en el mercado?</strong><br>
+        El consumidor argentino (C1 y ABC1) sufre lentitud en tiendas online e incertidumbre en entregas. Respondemos con catálogo curado de alta rotación (auriculares, smartwatches, teclados mecánicos) y experiencia digital internacional.</p>
+
+        <p><strong>Software nativo (React 19 + Firestore) vs CMS genéricos:</strong></p>
+        <ul style="padding-left: 1.2rem; margin: 0.4rem 0;">
+          <li><span class="prompter-pill">&lt; 1,2s de carga</span>: 4 veces más rápido, reduce rebote 42%.</li>
+          <li><span class="prompter-pill">85% ahorro cloud</span>: $2-$5 USD/mes vs $50 USD/mes de la competencia.</li>
+          <li><span class="prompter-pill">Control atómico de stock</span>: erradica ventas duplicadas en milisegundos.</li>
+          <li>Estructura formal blindada en S.R.L. lista para escalar sin arrastrar deuda.</li>
+        </ul>
+
+        <div class="prompter-cue">
+          🗣️ <strong>Pase de micrófono:</strong> "Le cedo la palabra a Juan M., quien les detallará nuestro posicionamiento comercial y la ventaja operativa de la logística Full."
+        </div>
+      </div>
+
+      <!-- Contenido Juan M. -->
+      <div id="tab-juanm" class="prompter-content" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <strong style="color: #38bdf8; font-size: 0.85rem;">PARTE 2: Mercado, Comercialización y Logística Full</strong>
+          <span class="prompter-pill">05:00 - 10:00 min</span>
+        </div>
+
+        <p class="prompter-quote">
+          "Gracias, Juani. Ahora bien, ¿cómo capturamos el mercado y aseguramos que el cliente elija JuanFer Shop?"
+        </p>
+
+        <p><strong>Diferenciación y Posicionamiento:</strong><br>
+        No competimos en guerras de precios en marketplaces. Competimos con nuestra PUV (inmediatez, diseño vanguardista, garantía formal). Portafolio equilibrado con Matriz BCG: productos <em>Estrella</em> de alto volumen/margen y <em>Vaca Lechera</em> de liquidez diaria.</p>
+
+        <p><strong>Alianza Logística que elimina el riesgo operativo:</strong></p>
+        <ul style="padding-left: 1.2rem; margin: 0.4rem 0;">
+          <li><span class="prompter-pill">Mercado Envíos Full</span>: mercadería en centros automatizados de Buenos Aires sin costo fijo de depósito ni empaque propio.</li>
+          <li><span class="prompter-pill">Insignia "Llega Mañana"</span>: envíos en 24h a todo el país.</li>
+          <li><span class="prompter-pill">Packaging Bonificado</span>: bolsas de seguridad a $0 costo unitario.</li>
+          <li>Lanzamiento a 8 semanas con campañas de pauta en Meta y TikTok Ads para tracción inmediata.</li>
+        </ul>
+
+        <div class="prompter-cue">
+          🗣️ <strong>Pase de micrófono:</strong> "Ahora Fer les presentará los números reales del negocio: nómina laboral, margen de contribución y flujo de fondos."
+        </div>
+      </div>
+
+      <!-- Contenido Fer -->
+      <div id="tab-fer" class="prompter-content" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <strong style="color: #38bdf8; font-size: 0.85rem;">PARTE 3: Solidez Financiera, Márgenes y Cierre</strong>
+          <span class="prompter-pill">10:00 - 15:00 min</span>
+        </div>
+
+        <p class="prompter-quote">
+          "Gracias, Juan. Un gran producto y una excelente logística no sirven si la economía del negocio no es sólida. Por eso, les voy a mostrar los números reales que hacen de JuanFer Shop una unidad altamente rentable."
+        </p>
+
+        <p><strong>Estructura Laboral y Costos Reales:</strong></p>
+        <ul style="padding-left: 1.2rem; margin: 0.4rem 0;">
+          <li>5 puestos: 3 desarrolladores (CCT AGC) y 2 vendedores (CCT FAECYS).</li>
+          <li>45% al 48% de cargas patronales reales (F.931, ART, SAC, vacaciones).</li>
+          <li>Costo fijo mensual total consolidado: <span class="prompter-pill">$17.063.797,93 ARS</span> (incluye alquiler y servicios cloud).</li>
+        </ul>
+
+        <p><strong>Margen y Unit Economics:</strong></p>
+        <ul style="padding-left: 1.2rem; margin: 0.4rem 0;">
+          <li>Precio Promedio: <strong>$67.575 ARS</strong></li>
+          <li>Margen Bruto Ponderado: <strong>39,09%</strong></li>
+          <li>Margen Contribución Unitario (MCU): <span class="prompter-pill">$26.411,77 ARS</span> libres por unidad.</li>
+        </ul>
+
+        <p><strong>Inversión y Retorno:</strong></p>
+        <ul style="padding-left: 1.2rem; margin: 0.4rem 0;">
+          <li>Inversión Capex Inicial: <span class="prompter-pill">$14.062.470 ARS</span> (lote inicial 166 uds + setup).</li>
+          <li>Punto Equilibrio Fundacional: <strong>466 unidades/mes</strong> (~15-16 ventas/día).</li>
+          <li>Punto Equilibrio Régimen Pleno: <strong>646 unidades/mes</strong>.</li>
+          <li>Flujo de caja 1° trimestre: <span class="prompter-pill">+$4.265.436,13 ARS</span>.</li>
+        </ul>
+
+        <p class="prompter-quote">
+          "Conclusión para el Inversor: JuanFer Shop es una empresa lista para operar, con una barrera tecnológica alta, cero deuda, un modelo logístico liviano en activos y una rentabilidad demostrada. Es la oportunidad perfecta para inyectar capital en un modelo probado y rentable desde el día uno. Muchas gracias."
+        </p>
+      </div>
     </div>
 
     <!-- Script de navegación interactiva y autoplay dinámico -->
@@ -207,8 +439,53 @@ const playlist = getPlaylist(folders);
           toggleAutoplay();
         } else if (e.key === 'f' || e.key === 'F') {
           toggleFullscreen();
-        } else if (e.key === 'Escape' || e.key === 'Home') {
+        } else if (e.key === 'p' || e.key === 'P' || e.key === 'g' || e.key === 'G') {
+          togglePrompter();
+        } else if (e.key === 'Escape') {
+          const modal = document.getElementById('prompter-modal');
+          if (modal && modal.classList.contains('visible')) {
+            togglePrompter();
+          } else {
+            navigate(playlist[0] || '/');
+          }
+        } else if (e.key === 'Home') {
           navigate(playlist[0] || '/');
+        }
+      }
+
+      function togglePrompter() {
+        const modal = document.getElementById('prompter-modal');
+        const btn = document.getElementById('toggle-prompter');
+        if (!modal) return;
+        const isVis = modal.classList.toggle('visible');
+        if (btn) btn.classList.toggle('active', isVis);
+      }
+
+      function setupPrompterTabs() {
+        const tabBtns = document.querySelectorAll('.prompter-tab-btn');
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const tabTarget = btn.getAttribute('data-tab');
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            ['juani', 'juanm', 'fer'].forEach(id => {
+              const panel = document.getElementById(`tab-${id}`);
+              if (panel) {
+                panel.style.display = id === tabTarget ? 'block' : 'none';
+              }
+            });
+          });
+        });
+
+        const closeBtn = document.getElementById('close-prompter');
+        if (closeBtn) {
+          closeBtn.onclick = togglePrompter;
+        }
+
+        const openBtn = document.getElementById('toggle-prompter');
+        if (openBtn) {
+          openBtn.onclick = togglePrompter;
         }
       }
 
@@ -226,6 +503,7 @@ const playlist = getPlaylist(folders);
           btnFullscreen.onclick = toggleFullscreen;
         }
 
+        setupPrompterTabs();
         updateAutoplayButton();
         stepLoop();
       });
