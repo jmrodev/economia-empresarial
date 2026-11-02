@@ -6,20 +6,6 @@ const folders = getGalleryData();
 ---
 <Layout title="JuanFer Shop S.A.S. - Presentación Economía Empresarial">
   <main style="width: 100%; min-height: 100vh; max-width: 1350px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem 1.5rem; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box;">
-    <header style="margin-bottom: 2rem;">
-      <div style="display: flex; gap: 0.6rem; align-items: center; margin-bottom: 0.8rem; flex-wrap: wrap;">
-        <span style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.35); color: #38bdf8; padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700;">
-          JuanFer Shop S.A.S.
-        </span>
-        <span style="background: rgba(129, 140, 248, 0.12); border: 1px solid rgba(129, 140, 248, 0.25); color: #a5b4fc; padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600;">
-          Economía Empresarial • ISFD 166
-        </span>
-      </div>
-      <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; margin: 0 0 0.6rem; letter-spacing: -0.02em; color: #f8fafc;">
-        Presentación para Emprendedores
-      </h1>
-    </header>
-
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; width: 100%;">
       {folders.map((folder) => (
         <a 
