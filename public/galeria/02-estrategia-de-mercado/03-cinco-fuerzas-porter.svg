@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="80" y="55" width="280" height="36" rx="18" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="220" y="79" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ESTRATEGIA COMPETITIVA</text>
+
+  <text x="80" y="140" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="800">Las Cinco Fuerzas de Michael Porter</text>
+  <text x="80" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19">Análisis estructural de la industria y elección de la estrategia de Liderazgo en Costos Focalizado</text>
+
+  <!-- Central Box: Rivalry -->
+  <rect x="530" y="380" width="540" height="230" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="2" />
+  <rect x="530" y="380" width="540" height="6" rx="3" fill="#38bdf8" />
+  <text x="800" y="420" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">Rivalidad Entre Competidores</text>
+  <text x="800" y="445" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Intensidad: Media - Alta</text>
+  <text x="560" y="485" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Grandes marketplaces masivos vs. tiendas especializadas.</text>
+  <text x="560" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● JuanFer Shop no compite en volumen indiferenciado.</text>
+  <text x="560" y="545" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">● Estrategia: Segmento C1/ABC1, software veloz y logística Full.</text>
+  <text x="560" y="575" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Diferencial: Curaduría selecta y asesoramiento vía WhatsApp.</text>
+
+  <!-- Top Box: Nuevos Entrantes -->
+  <rect x="530" y="215" width="540" height="145" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="800" y="250" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Amenaza de Nuevos Entrantes (Media)</text>
+  <text x="560" y="280" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Crear un e-commerce genérico es accesible, pero articular una</text>
+  <text x="560" y="302" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">plataforma React propia con Fulfillment y respaldo legal S.A.S.</text>
+  <text x="560" y="324" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">genera una sólida barrera de entrada tecnológica y operativa.</text>
+
+  <!-- Bottom Box: Sustitutos -->
+  <rect x="530" y="630" width="540" height="145" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="800" y="665" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Amenaza de Productos Sustitutos (Baja - Media)</text>
+  <text x="560" y="695" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Comercios tradicionales pierden ventas frente a canales web</text>
+  <text x="560" y="717" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">por costos fijos altos, falta de stock y demoras de traslado.</text>
+  <text x="560" y="739" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700">El profesional remoto prefiere entrega garantizada en 24h.</text>
+
+  <!-- Left Box: Proveedores -->
+  <rect x="80" y="380" width="430" height="230" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="110" y="420" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Poder Proveedores</text>
+  <text x="110" y="445" fill="#10b981" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Nivel: Bajo - Medio</text>
+  <text x="110" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Artículos con estándares universales</text>
+  <text x="110" y="502" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">provistos por múltiples importadores.</text>
+  <text x="110" y="530" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Elevada capacidad de sustitución.</text>
+  <text x="110" y="560" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Cero dependencia de un solo proveedor.</text>
+
+  <!-- Right Box: Clientes -->
+  <rect x="1090" y="380" width="430" height="230" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="1120" y="420" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Poder de Clientes</text>
+  <text x="1120" y="445" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Nivel: Medio</text>
+  <text x="1120" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Comparadores de precios a un clic.</text>
+  <text x="1120" y="502" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">● Fidelización y lealtad aseguradas por:</text>
+  <text x="1120" y="530" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">  - Rapidez de entrega inmediata (&lt; 24h).</text>
+  <text x="1120" y="555" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">  - Soporte postventa directo por WhatsApp.</text>
+
+  <!-- Bottom Global Summary Banner -->
+  <rect x="80" y="795" width="1440" height="60" rx="10" fill="#0b0f19" stroke="#818cf8" stroke-width="1" />
+  <text x="800" y="832" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">Dictamen Porter: <tspan fill="#818cf8" font-weight="700">Liderazgo en Costos Focalizado</tspan> (eficiencia serverless + Full logística + segmento C1/ABC1)</text>
+</svg>

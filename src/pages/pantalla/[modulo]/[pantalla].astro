@@ -1,0 +1,66 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getGalleryData } from '../../../data/gallery';
+
+export function getStaticPaths() {
+  const folders = getGalleryData();
+  const paths = [];
+
+  for (const folder of folders) {
+    const moduleIds = [folder.id];
+    // Alias de compatibilidad
+    if (folder.id === 'evaluacion-financiera') moduleIds.push('evaluacion-financiera-y-retorno');
+    if (folder.id === 'tecnologia-y-plataforma') moduleIds.push('plataforma-web');
+    if (folder.id === 'costos-laborales-y-logistica') moduleIds.push('operaciones-y-logistica');
+
+    for (const modId of moduleIds) {
+      for (const item of folder.items) {
+        paths.push({
+          params: { modulo: modId, pantalla: item.id },
+          props: { folder, item }
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { folder, item } = Astro.props;
+---
+<Layout title={`${item.title} - ${folder.title}`}>
+  <main style="width: 100vw; height: 100vh; margin: 0; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; overflow: hidden; position: relative;">
+    
+    <!-- Top bar con navegación de retorno al módulo padre -->
+    <div style="position: absolute; top: 1.5rem; left: 2rem; display: flex; align-items: center; gap: 0.85rem; z-index: 20;">
+      <a 
+        href={`/modulo/${folder.id}`} 
+        style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #f8fafc; text-decoration: none; font-size: 1rem; font-weight: 700; transition: background 0.2s;"
+        title={`Volver a ${folder.title}`}
+      >
+        &larr;
+      </a>
+      <div>
+        <h2 style="margin: 0; font-size: 1.15rem; font-weight: 700; color: #f8fafc; letter-spacing: -0.01em;">
+          {item.title}
+        </h2>
+        <span style="font-size: 0.8rem; color: #94a3b8;">
+          {folder.title}
+        </span>
+      </div>
+    </div>
+
+    <!-- Imagen a pantalla completa limpia (clickable para volver al módulo) -->
+    <a 
+      href={`/modulo/${folder.id}`}
+      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; text-decoration: none; cursor: zoom-out;"
+      title="Clic para volver a la grilla del módulo"
+    >
+      <img 
+        src={item.url} 
+        alt={item.title} 
+        style={`max-width: 95vw; max-height: 88vh; width: auto; height: auto; object-fit: contain; border-radius: 14px; box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255,255,255,0.1); view-transition-name: ${item.transitionName};`}
+      />
+    </a>
+  </main>
+</Layout>

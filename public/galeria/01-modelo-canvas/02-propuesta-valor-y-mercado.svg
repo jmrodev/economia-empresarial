@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="80" y="45" width="280" height="36" rx="18" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="220" y="69" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">MODELO CANVAS • BLOQUES 1 A 4</text>
+
+  <text x="80" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Propuesta de Valor, Clientes, Canales y Relación</text>
+  <text x="80" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">La articulación del valor y la experiencia comercial hacia el segmento meta</text>
+
+  <!-- 4 Cards Grid -->
+  <!-- Card 1: Propuesta de Valor -->
+  <rect x="80" y="195" width="345" height="665" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="80" y="195" width="345" height="6" rx="3" fill="#38bdf8" />
+  <circle cx="120" cy="245" r="22" fill="#38bdf8" fill-opacity="0.2" />
+  <text x="120" y="252" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">01</text>
+  <text x="155" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Propuesta de Valor</text>
+
+  <text x="105" y="300" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Catálogo Curado:</text>
+  <text x="105" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">15 productos en electrónica, ergonomía</text>
+  <text x="105" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">e indumentaria urbana duradera.</text>
+
+  <text x="105" y="395" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Velocidad Extrema:</text>
+  <text x="105" y="420" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Carga en menos de 1,2s (LCP) en</text>
+  <text x="105" y="442" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">plataforma React 19 nativa.</text>
+
+  <text x="105" y="490" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Despacho en 24 Horas:</text>
+  <text x="105" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Integración Full Fulfillment a todo</text>
+  <text x="105" y="537" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">el país ("Llega Mañana").</text>
+
+  <text x="105" y="585" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Cero Overselling:</text>
+  <text x="105" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Control transaccional atómico</text>
+  <text x="105" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">de stock en tiempo real en la nube.</text>
+
+  <rect x="100" y="675" width="305" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="120" y="705" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">USP Diferencial:</text>
+  <text x="120" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">"Equipamiento de vanguardia,</text>
+  <text x="120" y="758" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">despachado en el día y respaldado</text>
+  <text x="120" y="781" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">por software ágil sin fricciones."</text>
+
+  <!-- Card 2: Segmentos de Clientes -->
+  <rect x="445" y="195" width="345" height="665" rx="14" fill="url(#card-grad)" stroke="#818cf8" stroke-width="1.5" />
+  <rect x="445" y="195" width="345" height="6" rx="3" fill="#818cf8" />
+  <circle cx="485" cy="245" r="22" fill="#818cf8" fill-opacity="0.2" />
+  <text x="485" y="252" fill="#818cf8" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">02</text>
+  <text x="520" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Segmentos Meta</text>
+
+  <text x="470" y="300" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Target Socioeconómico:</text>
+  <text x="470" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Estratos C1 y ABC1 de Argentina con</text>
+  <text x="470" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">poder adquisitivo medio-alto.</text>
+
+  <text x="470" y="395" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Demografía &amp; Profesión:</text>
+  <text x="470" y="420" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Jóvenes de 20 a 45 años: IT,</text>
+  <text x="470" y="442" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">diseñadores, mandos medios.</text>
+
+  <text x="470" y="490" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Teletrabajo en Auge:</text>
+  <text x="470" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">2,4 millones de teletrabajadores que</text>
+  <text x="470" y="537" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">invierten en su home office.</text>
+
+  <text x="470" y="585" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Comportamiento:</text>
+  <text x="470" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Usuarios digitales que exigen tracking</text>
+  <text x="470" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">en vivo y valoran su tiempo.</text>
+
+  <rect x="465" y="675" width="305" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="485" y="705" fill="#818cf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Frecuencia &amp; Pagos:</text>
+  <text x="485" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Uso intensivo de Mercado Pago,</text>
+  <text x="485" y="758" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">tarjetas en cuotas y preferencia</text>
+  <text x="485" y="781" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">por entregas "Llega Mañana".</text>
+
+  <!-- Card 3: Canales -->
+  <rect x="810" y="195" width="345" height="665" rx="14" fill="url(#card-grad)" stroke="#34d399" stroke-width="1.5" />
+  <rect x="810" y="195" width="345" height="6" rx="3" fill="#34d399" />
+  <circle cx="850" cy="245" r="22" fill="#34d399" fill-opacity="0.2" />
+  <text x="850" y="252" fill="#34d399" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">03</text>
+  <text x="885" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Canales de Venta</text>
+
+  <text x="835" y="300" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">E-Commerce D2C Propio:</text>
+  <text x="835" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Web Single-Page Application</text>
+  <text x="835" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">sin comisiones añadidas al cliente.</text>
+
+  <text x="835" y="395" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Distribución Logística:</text>
+  <text x="835" y="420" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Red de depósitos y camiones de</text>
+  <text x="835" y="442" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Mercado Envíos Full a todo el país.</text>
+
+  <text x="835" y="490" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Pauta Digital de Adquisición:</text>
+  <text x="835" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Campañas segmentadas en Meta Ads</text>
+  <text x="835" y="537" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">(Instagram/FB) y TikTok Ads.</text>
+
+  <text x="835" y="585" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">WhatsApp Business:</text>
+  <text x="835" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Atención humana inmediata para</text>
+  <text x="835" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">cierre de consultas técnicas.</text>
+
+  <rect x="830" y="675" width="305" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="850" y="705" fill="#34d399" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Omnicanalidad:</text>
+  <text x="850" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Sinergia entre tráfico digital,</text>
+  <text x="850" y="758" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">fulfillment automatizado y local</text>
+  <text x="850" y="781" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">comercial de apoyo en Tandil.</text>
+
+  <!-- Card 4: Relación con Clientes -->
+  <rect x="1175" y="195" width="345" height="665" rx="14" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.5" />
+  <rect x="1175" y="195" width="345" height="6" rx="3" fill="#f59e0b" />
+  <circle cx="1215" cy="245" r="22" fill="#f59e0b" fill-opacity="0.2" />
+  <text x="1215" y="252" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">04</text>
+  <text x="1250" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Relación Clientes</text>
+
+  <text x="1200" y="300" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Autoservicio Intuitivo:</text>
+  <text x="1200" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Flujo de compra en 3 clics con</text>
+  <text x="1200" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">tracking en tiempo real.</text>
+
+  <text x="1200" y="395" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Soporte Técnico Experto:</text>
+  <text x="1200" y="420" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Asesoramiento sobre compatibilidad,</text>
+  <text x="1200" y="442" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">medidas y ergonomía.</text>
+
+  <text x="1200" y="490" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Botón de Arrepentimiento:</text>
+  <text x="1200" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Cumplimiento Ley 24.240 con</text>
+  <text x="1200" y="537" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">devolución simple en 10 días.</text>
+
+  <text x="1200" y="585" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Fidelización Postventa:</text>
+  <text x="1200" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Recupero de carritos y cupones</text>
+  <text x="1200" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">de recompra trimestral.</text>
+
+  <rect x="1195" y="675" width="305" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="1215" y="705" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Transparencia Total:</text>
+  <text x="1215" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Precios finales visibles desde el</text>
+  <text x="1215" y="758" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">inicio sin sobreprecios logísticos ni</text>
+  <text x="1215" y="781" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">cargos sorpresivos al pagar.</text>
+</svg>

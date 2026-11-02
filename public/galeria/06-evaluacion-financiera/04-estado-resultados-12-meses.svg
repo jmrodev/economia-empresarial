@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="80" y="55" width="280" height="36" rx="18" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="220" y="79" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ESTADO DE RESULTADOS AÑO 1</text>
+
+  <text x="80" y="140" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="800">Proyección Financiera a 12 Meses</text>
+  <text x="80" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19">Modelado con Inflación Mensual INDEC (2,05%), Sueldo Anual Complementario (SAC) y reinversión</text>
+
+  <!-- Key Metrics Row -->
+  <rect x="80" y="210" width="455" height="135" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="110" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15" font-weight="600">FACTURACIÓN BRUTA ANUAL</text>
+  <text x="110" y="295" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="34" font-weight="800">$ 820.150.896</text>
+  <text x="110" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">10.670 unidades vendidas en el año</text>
+
+  <rect x="572" y="210" width="455" height="135" rx="14" fill="url(#card-grad)" stroke="#818cf8" stroke-width="1.5" />
+  <text x="602" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15" font-weight="600">RESULTADO OPERATIVO (EBIT)</text>
+  <text x="602" y="295" fill="#818cf8" font-family="system-ui, sans-serif" font-size="34" font-weight="800">+$ 81.442.820</text>
+  <text x="602" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Margen operativo antes de impuestos</text>
+
+  <rect x="1065" y="210" width="455" height="135" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="2" />
+  <text x="1095" y="250" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15" font-weight="600">BENEFICIO NETO ANUAL REAL</text>
+  <text x="1095" y="295" fill="#10b981" font-family="system-ui, sans-serif" font-size="34" font-weight="800">+$ 52.737.539</text>
+  <text x="1095" y="325" fill="#34d399" font-family="system-ui, sans-serif" font-size="14">Luego de IIBB (3,5%) y cargas formales</text>
+
+  <!-- P&L Waterfall Table Card -->
+  <rect x="80" y="375" width="880" height="465" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="110" y="420" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="22" font-weight="700">Cascada Financiera Consolidada (Año 1)</text>
+
+  <text x="110" y="465" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">Ingresos Brutos Totales:</text>
+  <text x="750" y="465" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">$ 820.150.896,16</text>
+  <text x="910" y="465" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">100,00%</text>
+  <line x1="110" y1="480" x2="930" y2="480" stroke="#334155" stroke-width="1" />
+
+  <text x="110" y="515" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">(-) Costos de Mercadería (CMV):</text>
+  <text x="750" y="515" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">($ 322.756.248,31)</text>
+  <text x="910" y="515" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">39,35%</text>
+
+  <text x="110" y="555" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">(-) Comisiones Marketplace y Pasarela:</text>
+  <text x="750" y="555" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">($ 113.918.959,48)</text>
+  <text x="910" y="555" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">13,89%</text>
+
+  <text x="110" y="595" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">(-) Fletes Envíos Full y Reposición:</text>
+  <text x="750" y="595" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">($ 62.919.415,09)</text>
+  <text x="910" y="595" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">7,67%</text>
+  <line x1="110" y1="610" x2="930" y2="610" stroke="#334155" stroke-width="1" />
+
+  <text x="110" y="645" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="17" font-weight="700">MARGEN DE CONTRIBUCIÓN BRUTO:</text>
+  <text x="750" y="645" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="end">$ 320.556.273,27</text>
+  <text x="910" y="645" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="end">39,09%</text>
+
+  <text x="110" y="685" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">(-) Costos Fijos (Sueldos F.931, Local, Cloud):</text>
+  <text x="750" y="685" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">($ 239.113.452,67)</text>
+  <text x="910" y="685" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">29,15%</text>
+  <line x1="110" y1="700" x2="930" y2="700" stroke="#334155" stroke-width="1" />
+
+  <text x="110" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">(-) Impuesto IIBB (Convenio Multilateral 3,5%):</text>
+  <text x="750" y="735" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">($ 28.705.281,37)</text>
+  <text x="910" y="735" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" text-anchor="end">3,50%</text>
+  <line x1="110" y1="755" x2="930" y2="755" stroke="#38bdf8" stroke-width="2" />
+
+  <text x="110" y="795" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="800">BENEFICIO NETO FINAL (AÑO 1):</text>
+  <text x="750" y="795" fill="#10b981" font-family="system-ui, sans-serif" font-size="22" font-weight="800" text-anchor="end">+$ 52.737.539,24</text>
+  <text x="910" y="795" fill="#10b981" font-family="system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="end">6,43%</text>
+
+  <!-- Right Reinvestment Card -->
+  <rect x="990" y="375" width="530" height="465" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" />
+  <text x="1020" y="420" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="22" font-weight="700">Política de Reinversión de Utilidades</text>
+  <text x="1020" y="450" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">Decisión formal de asamblea de socios fundadores</text>
+
+  <rect x="1020" y="480" width="470" height="130" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="1045" y="515" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="18" font-weight="700">70% Expansión de Inventario</text>
+  <text x="1045" y="555" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="28" font-weight="800">$ 36.916.277,47</text>
+  <text x="1045" y="585" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Duplicación de stock y compras por contenedor</text>
+
+  <rect x="1020" y="630" width="470" height="120" rx="12" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" />
+  <text x="1045" y="665" fill="#818cf8" font-family="system-ui, sans-serif" font-size="18" font-weight="700">30% Fondo de Reserva Técnica</text>
+  <text x="1045" y="705" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="28" font-weight="800">$ 15.821.261,77</text>
+  <text x="1045" y="730" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Blindaje financiero ante volatilidad macro</text>
+
+  <text x="1020" y="795" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">0% Retiro de dividendos en Año 1 para maximizar solvencia.</text>
+</svg>

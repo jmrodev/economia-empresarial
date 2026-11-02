@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+    <rect width="1200" height="750" rx="20" fill="#0f172a" stroke="#1e293b" stroke-width="3" />
+    <rect width="1200" height="70" rx="20" fill="#1e293b" />
+    <circle cx="35" cy="35" r="7" fill="#ef4444" />
+    <circle cx="60" cy="35" r="7" fill="#eab308" />
+    <circle cx="85" cy="35" r="7" fill="#22c55e" />
+    <text x="130" y="41" fill="#ffffff" font-size="18" font-weight="700" font-family="sans-serif">Panel Financiero y Cobranzas Mensuales</text>
+    <rect x="1030" y="22" width="130" height="28" rx="14" fill="#10b981" opacity="0.25" />
+    <text x="1095" y="41" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold" font-family="sans-serif">Módulo Finanzas</text>
+    
+      
+      <g transform="translate(40, 180)">
+        <rect width="350" height="200" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+        <text x="25" y="45" fill="#94a3b8" font-size="15" font-family="sans-serif">Recaudación Mensual</text>
+        <text x="25" y="115" fill="#f8fafc" font-size="38" font-weight="800" font-family="sans-serif">$14.280.000</text>
+        <text x="25" y="160" fill="#10b981" font-size="14" font-weight="600" font-family="sans-serif">+12% vs mes anterior</text>
+      </g>
+    
+      <g transform="translate(425, 180)">
+        <rect width="350" height="200" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+        <text x="25" y="45" fill="#94a3b8" font-size="15" font-family="sans-serif">Morosidad Global</text>
+        <text x="25" y="115" fill="#f8fafc" font-size="38" font-weight="800" font-family="sans-serif">4.8%</text>
+        <text x="25" y="160" fill="#10b981" font-size="14" font-weight="600" font-family="sans-serif">Bajo el umbral objetivo (6%)</text>
+      </g>
+    
+      <g transform="translate(810, 180)">
+        <rect width="350" height="200" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+        <text x="25" y="45" fill="#94a3b8" font-size="15" font-family="sans-serif">Facturas Emitidas</text>
+        <text x="25" y="115" fill="#f8fafc" font-size="38" font-weight="800" font-family="sans-serif">1.240</text>
+        <text x="25" y="160" fill="#10b981" font-size="14" font-weight="600" font-family="sans-serif">100% integradas AFIP/Fiscal</text>
+      </g>
+    
+      <g transform="translate(40, 420)">
+        <rect width="1120" height="220" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+        <text x="30" y="45" fill="#f8fafc" font-size="18" font-weight="bold" font-family="sans-serif">Observaciones y Seguimiento Pedagógico</text>
+        <rect x="30" y="70" width="800" height="12" rx="6" fill="#334155" />
+        <rect x="30" y="95" width="700" height="12" rx="6" fill="#334155" />
+        <rect x="30" y="120" width="750" height="12" rx="6" fill="#334155" />
+        <rect x="30" y="155" width="200" height="35" rx="8" fill="#10b981" />
+        <text x="130" y="177" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">Emitir Informe PDF</text>
+      </g>
+    
+  </svg>

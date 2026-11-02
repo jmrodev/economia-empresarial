@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="70" y="45" width="280" height="36" rx="18" fill="#818cf8" fill-opacity="0.15" stroke="#818cf8" stroke-width="1.5" />
+  <text x="210" y="69" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ENCUADRE JURÍDICO &amp; FISCAL</text>
+
+  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Sociedad por Acciones Simplificada (S.A.S.)</text>
+  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Ley Nacional N° 27.349 de Apoyo al Capital Emprendedor • Blindaje patrimonial y agilidad societaria</text>
+
+  <!-- 3 Pillar Cards (width 460 each, x=70, 570, 1070) -->
+  <!-- Card 1: Blindaje Patrimonial -->
+  <rect x="70" y="195" width="460" height="385" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" />
+  <rect x="70" y="195" width="460" height="6" rx="3" fill="#10b981" />
+  <circle cx="110" cy="245" r="22" fill="#10b981" fill-opacity="0.2" />
+  <text x="110" y="252" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">🛡️</text>
+  <text x="145" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Blindaje Patrimonial</text>
+
+  <text x="100" y="295" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Art. 34 Ley 27.349:</text>
+  <text x="100" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Los socios limitan su responsabilidad</text>
+  <text x="100" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">patrimonial única y taxativamente a la</text>
+  <text x="100" y="369" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">integración de las acciones suscriptas.</text>
+
+  <line x1="100" y1="395" x2="490" y2="395" stroke="#334155" stroke-width="1" />
+  <text x="100" y="425" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Protección del Patrimonio Personal:</text>
+  <text x="100" y="455" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Los bienes particulares de los tres socios</text>
+  <text x="100" y="477" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">quedan 100% a resguardo frente a pasivos</text>
+  <text x="100" y="499" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">comerciales u operativos de la sociedad.</text>
+  <text x="100" y="540" fill="#34d399" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Personalidad jurídica independiente y soberana.</text>
+
+  <!-- Card 2: Capital Social & Plazos -->
+  <rect x="570" y="195" width="460" height="385" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="570" y="195" width="460" height="6" rx="3" fill="#38bdf8" />
+  <circle cx="610" cy="245" r="22" fill="#38bdf8" fill-opacity="0.2" />
+  <text x="610" y="252" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">💼</text>
+  <text x="645" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Capital Social &amp; Plazos</text>
+
+  <text x="600" y="295" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Capital Mínimo Legal (Art. 40):</text>
+  <text x="600" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Equivalente a dos (2) Salarios Mínimos,</text>
+  <text x="600" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Vitales y Móviles (SMVM) al momento</text>
+  <text x="600" y="369" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">de otorgar el acto constitutivo.</text>
+
+  <line x1="600" y1="395" x2="990" y2="395" stroke="#334155" stroke-width="1" />
+  <text x="600" y="425" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Facilidad de Integración (Art. 41):</text>
+  <text x="600" y="455" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Solo se exige integrar el 25% en efectivo,</text>
+  <text x="600" y="477" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">contando con hasta 2 años de plazo legal</text>
+  <text x="600" y="499" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">para completar el 75% restante.</text>
+  <text x="600" y="540" fill="#34d399" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Inversión constitución: $ 300.000 (tasas/edictos).</text>
+
+  <!-- Card 3: Encuadre Tributario -->
+  <rect x="1070" y="195" width="460" height="385" rx="14" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.5" />
+  <rect x="1070" y="195" width="460" height="6" rx="3" fill="#f59e0b" />
+  <circle cx="1110" cy="245" r="22" fill="#f59e0b" fill-opacity="0.2" />
+  <text x="1110" y="252" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">⚖️</text>
+  <text x="1145" y="252" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Encuadre Tributario</text>
+
+  <text x="1100" y="295" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">AFIP / DGI Responsable Inscripto:</text>
+  <text x="1100" y="325" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">IVA (21%) + Impuesto a las Ganancias</text>
+  <text x="1100" y="347" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Sociedades de Capital (25% a 35%).</text>
+  <text x="1100" y="369" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Facturación electrónica web services.</text>
+
+  <line x1="1100" y1="395" x2="1490" y2="395" stroke="#334155" stroke-width="1" />
+  <text x="1100" y="425" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">ARBA / Convenio Multilateral:</text>
+  <text x="1100" y="455" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Ingresos Brutos interjurisdiccionales con</text>
+  <text x="1100" y="477" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">alícuota formal ponderada del 3,5%.</text>
+  <text x="1100" y="540" fill="#34d399" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Cumplimiento fiscal 100% transparente.</text>
+
+  <!-- Bottom Banner: Consumer Protection & Digital Books -->
+  <rect x="70" y="605" width="1460" height="255" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <text x="100" y="650" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Gobernanza Digital &amp; Protección al Consumidor</text>
+
+  <rect x="100" y="675" width="695" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="125" y="710" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Libros Societarios &amp; Actas Digitales:</text>
+  <text x="125" y="740" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Rúbrica digital de actas, registro de acciones y libros contables</text>
+  <text x="125" y="763" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">ante la Dirección Provincial de Personas Jurídicas (DPPJ).</text>
+  <text x="125" y="795" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Digitalización total y fiscalización simplificada.</text>
+
+  <rect x="825" y="675" width="675" height="155" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="850" y="710" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Botón de Arrepentimiento (Ley 24.240 &amp; Res. 271/2020):</text>
+  <text x="850" y="740" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Implementado en la web con revocación sin costo en 10 días corridos.</text>
+  <text x="850" y="763" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Apego estricto a la Ley 25.326 de Protección de Datos Personales.</text>
+  <text x="850" y="795" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Seguridad y confianza para el comprador online.</text>
+</svg>

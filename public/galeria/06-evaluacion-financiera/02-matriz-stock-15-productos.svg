@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="70" y="45" width="280" height="36" rx="18" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5" />
+  <text x="210" y="69" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">MATRIZ DE RENTABILIDAD</text>
+
+  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Matriz de Stock Inicial (15 Productos)</text>
+  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Lote de 166 unidades valuado al CMV • Desglose unitario de comisiones, fletes Full y margen bruto</text>
+
+  <!-- Big Table Container (x=70 to x=1530, width=1460) -->
+  <rect x="70" y="195" width="1460" height="665" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Table Header -->
+  <rect x="70" y="195" width="1460" height="45" rx="14" fill="#0b0f19" />
+  <text x="95" y="225" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">ARTÍCULO / PRODUCTO</text>
+  <text x="360" y="225" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">RUBRO</text>
+  <text x="490" y="225" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">STOCK</text>
+  <text x="630" y="225" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">PVU ($)</text>
+  <text x="770" y="225" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">CMV ($)</text>
+  <text x="920" y="225" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">COM. ML (13%)</text>
+  <text x="1070" y="225" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">FLETE FULL</text>
+  <text x="1240" y="225" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">MARGEN UNIT.</text>
+  <text x="1500" y="225" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="end">GAN. LOTE ($)</text>
+  <line x1="70" y1="240" x2="1530" y2="240" stroke="#334155" stroke-width="1" />
+
+  <!-- 15 Rows with precise right-aligned numbers -->
+  <!-- 1 -->
+  <text x="95" y="268" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Wireless Headphones</text>
+  <text x="360" y="268" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="268" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">5 u.</text>
+  <text x="630" y="268" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 99.990</text>
+  <text x="770" y="268" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 38.000</text>
+  <text x="920" y="268" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 12.999</text>
+  <text x="1070" y="268" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.900</text>
+  <text x="1240" y="268" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 42.491</text>
+  <text x="1500" y="268" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 212.455</text>
+
+  <!-- 2 -->
+  <text x="95" y="296" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Minimalist Leather Watch</text>
+  <text x="360" y="296" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="296" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">2 u.</text>
+  <text x="630" y="296" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 149.500</text>
+  <text x="770" y="296" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 58.000</text>
+  <text x="920" y="296" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 19.435</text>
+  <text x="1070" y="296" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.900</text>
+  <text x="1240" y="296" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 65.565</text>
+  <text x="1500" y="296" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 131.130</text>
+
+  <!-- 3 -->
+  <text x="95" y="324" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Classic Denim Jacket</text>
+  <text x="360" y="324" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Clothing</text>
+  <text x="490" y="324" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">8 u.</text>
+  <text x="630" y="324" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 79.990</text>
+  <text x="770" y="324" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 32.000</text>
+  <text x="920" y="324" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 10.399</text>
+  <text x="1070" y="324" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.500</text>
+  <text x="1240" y="324" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 30.491</text>
+  <text x="1500" y="324" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 243.928</text>
+
+  <!-- 4 -->
+  <text x="95" y="352" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Running Sneakers</text>
+  <text x="360" y="352" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Clothing</text>
+  <text x="490" y="352" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">4 u.</text>
+  <text x="630" y="352" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 119.990</text>
+  <text x="770" y="352" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 48.000</text>
+  <text x="920" y="352" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 15.599</text>
+  <text x="1070" y="352" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.500</text>
+  <text x="1240" y="352" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 49.291</text>
+  <text x="1500" y="352" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 197.164</text>
+
+  <!-- 5 -->
+  <text x="95" y="380" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Smart Fitness Band</text>
+  <text x="360" y="380" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="380" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">10 u.</text>
+  <text x="630" y="380" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 49.990</text>
+  <text x="770" y="380" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 19.000</text>
+  <text x="920" y="380" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.499</text>
+  <text x="1070" y="380" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.400</text>
+  <text x="1240" y="380" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 18.491</text>
+  <text x="1500" y="380" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 184.910</text>
+
+  <!-- 6 -->
+  <text x="95" y="408" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Cotton Crewneck T-Shirt</text>
+  <text x="360" y="408" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Clothing</text>
+  <text x="490" y="408" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">15 u.</text>
+  <text x="630" y="408" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 24.990</text>
+  <text x="770" y="408" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 9.500</text>
+  <text x="920" y="408" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.499*</text>
+  <text x="1070" y="408" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 0 (Comp.)</text>
+  <text x="1240" y="408" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 9.391</text>
+  <text x="1500" y="408" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 140.865</text>
+
+  <!-- 7 -->
+  <text x="95" y="436" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Ergonomic Office Chair</text>
+  <text x="360" y="436" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Furniture</text>
+  <text x="490" y="436" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">7 u.</text>
+  <text x="630" y="436" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 249.990</text>
+  <text x="770" y="436" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 110.000</text>
+  <text x="920" y="436" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 32.499</text>
+  <text x="1070" y="436" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 9.800</text>
+  <text x="1240" y="436" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 95.191</text>
+  <text x="1500" y="436" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 666.337</text>
+
+  <!-- 8 -->
+  <text x="95" y="464" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Mechanical Keyboard</text>
+  <text x="360" y="464" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="464" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">12 u.</text>
+  <text x="630" y="464" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 129.990</text>
+  <text x="770" y="464" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 52.000</text>
+  <text x="920" y="464" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 16.899</text>
+  <text x="1070" y="464" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.900</text>
+  <text x="1240" y="464" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 54.591</text>
+  <text x="1500" y="464" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 655.092</text>
+
+  <!-- 9 -->
+  <text x="95" y="492" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Travel Backpack</text>
+  <text x="360" y="492" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Accessories</text>
+  <text x="490" y="492" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">20 u.</text>
+  <text x="630" y="492" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 69.990</text>
+  <text x="770" y="492" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 27.000</text>
+  <text x="920" y="492" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 9.099</text>
+  <text x="1070" y="492" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.500</text>
+  <text x="1240" y="492" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 26.791</text>
+  <text x="1500" y="492" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 535.820</text>
+
+  <!-- 10 -->
+  <text x="95" y="520" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Stainless Steel Bottle</text>
+  <text x="360" y="520" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Accessories</text>
+  <text x="490" y="520" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">25 u.</text>
+  <text x="630" y="520" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 29.990</text>
+  <text x="770" y="520" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 11.000</text>
+  <text x="920" y="520" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.549*</text>
+  <text x="1070" y="520" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 0 (Comp.)</text>
+  <text x="1240" y="520" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 11.841</text>
+  <text x="1500" y="520" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 296.025</text>
+
+  <!-- 11 -->
+  <text x="95" y="548" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Leather Bifold Wallet</text>
+  <text x="360" y="548" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Accessories</text>
+  <text x="490" y="548" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">9 u.</text>
+  <text x="630" y="548" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 39.990</text>
+  <text x="770" y="548" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 14.500</text>
+  <text x="920" y="548" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.199</text>
+  <text x="1070" y="548" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 4.900</text>
+  <text x="1240" y="548" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 14.791</text>
+  <text x="1500" y="548" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 133.119</text>
+
+  <!-- 12 -->
+  <text x="95" y="576" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Smart Coffee Maker</text>
+  <text x="360" y="576" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="576" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">6 u.</text>
+  <text x="630" y="576" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 89.990</text>
+  <text x="770" y="576" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 36.000</text>
+  <text x="920" y="576" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 11.699</text>
+  <text x="1070" y="576" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 6.900</text>
+  <text x="1240" y="576" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 34.791</text>
+  <text x="1500" y="576" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 208.746</text>
+
+  <!-- 13 -->
+  <text x="95" y="604" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Wool Winter Scarf</text>
+  <text x="360" y="604" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Clothing</text>
+  <text x="490" y="604" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">14 u.</text>
+  <text x="630" y="604" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 34.990</text>
+  <text x="770" y="604" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 13.000</text>
+  <text x="920" y="604" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 4.549</text>
+  <text x="1070" y="604" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 4.900</text>
+  <text x="1240" y="604" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 11.941</text>
+  <text x="1500" y="604" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 167.174</text>
+
+  <!-- 14 -->
+  <text x="95" y="632" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Portable Bluetooth Speaker</text>
+  <text x="360" y="632" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Electronics</text>
+  <text x="490" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">18 u.</text>
+  <text x="630" y="632" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 59.990</text>
+  <text x="770" y="632" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 23.000</text>
+  <text x="920" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 7.799</text>
+  <text x="1070" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.400</text>
+  <text x="1240" y="632" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 23.191</text>
+  <text x="1500" y="632" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 417.438</text>
+
+  <!-- 15 -->
+  <text x="95" y="660" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Polarized Sunglasses</text>
+  <text x="360" y="660" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Accessories</text>
+  <text x="490" y="660" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">11 u.</text>
+  <text x="630" y="660" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 45.000</text>
+  <text x="770" y="660" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 16.000</text>
+  <text x="920" y="660" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 5.850</text>
+  <text x="1070" y="660" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" text-anchor="end">$ 4.900</text>
+  <text x="1240" y="660" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 17.650</text>
+  <text x="1500" y="660" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">$ 194.150</text>
+
+  <!-- Total Row Card Inside Table -->
+  <rect x="70" y="690" width="1460" height="170" rx="14" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+  <text x="95" y="735" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="800">TOTALES DEL LOTE INICIAL:</text>
+  <text x="490" y="735" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="800">166 u.</text>
+  <text x="630" y="735" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="end">$ 11.217.470</text>
+  <text x="770" y="735" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="end">$ 4.414.000</text>
+  <text x="920" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="end">$ 1.558.317</text>
+  <text x="1070" y="735" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="end">$ 860.800</text>
+  <text x="1240" y="735" fill="#34d399" font-family="system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="end">39,09%</text>
+  <text x="1500" y="735" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="end">+$ 4.384.353</text>
+
+  <line x1="95" y1="760" x2="1500" y2="760" stroke="#334155" stroke-width="1" />
+  <text x="95" y="790" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">(*) Artículos &lt; $33.000: Mercado Libre percibe 13% más cargo unitario fijo según tarifario oficial. Envío a cargo del comprador.</text>
+  <text x="95" y="818" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Rentabilidad consolidada: Inversión en mercaderías de $ 4.414.000 arroja un margen bruto de ganancia de +$ 4.384.353 ARS (39,09%).</text>
+</svg>

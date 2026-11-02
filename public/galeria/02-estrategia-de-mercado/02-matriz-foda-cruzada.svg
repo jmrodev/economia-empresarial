@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="70" y="45" width="280" height="36" rx="18" fill="#818cf8" fill-opacity="0.15" stroke="#818cf8" stroke-width="1.5" />
+  <text x="210" y="69" fill="#818cf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">DIAGNÓSTICO ESTRATÉGICO</text>
+
+  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Matriz FODA Cruzada</text>
+  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Articulación de fortalezas y debilidades internas frente al entorno competitivo argentino</text>
+
+  <!-- 4 Quadrants Grid (width 715 each) -->
+  <!-- Quadrant 1: Estrategias FO -->
+  <rect x="70" y="195" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" />
+  <rect x="70" y="195" width="715" height="6" rx="3" fill="#10b981" />
+  <text x="100" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="19" font-weight="800">ESTRATEGIAS FO (Fortalezas + Oportunidades)</text>
+  <text x="100" y="265" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Maxi-Maxi: Usar fortalezas internas para aprovechar oportunidades de mercado</text>
+
+  <text x="100" y="305" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Conversión Superior:</tspan> Aprovechar la velocidad de React 19 (LCP &lt; 1,2s)</text>
+  <text x="118" y="327" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">para maximizar el ROAS en campañas de pauta digital en redes.</text>
+
+  <text x="100" y="370" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Escala Nacional "Llega Mañana":</tspan> Almacén y logística Full de</text>
+  <text x="118" y="392" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Mercado Libre para captar a compradores C1/ABC1 sin tolerar demoras.</text>
+
+  <text x="100" y="435" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Ahorro Estructural:</tspan> Costos serverless de &lt;$5 USD/mes permiten</text>
+  <text x="118" y="457" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">reorientar presupuesto operativo a adquisición y precios competitivos.</text>
+
+  <!-- Quadrant 2: Estrategias DO -->
+  <rect x="815" y="195" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="815" y="195" width="715" height="6" rx="3" fill="#38bdf8" />
+  <text x="845" y="240" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="19" font-weight="800">ESTRATEGIAS DO (Debilidades + Oportunidades)</text>
+  <text x="845" y="265" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Mini-Maxi: Superar debilidades internas apoyándose en oportunidades del entorno</text>
+
+  <text x="845" y="305" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Instalación de Marca Joven:</tspan> Campañas de unboxing y reviews</text>
+  <text x="863" y="327" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">con microinfluencers del sector tech para construir confianza acelerada.</text>
+
+  <text x="845" y="370" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Rotación Ágil de Stock:</tspan> Superar el lote inicial de 166 unidades</text>
+  <text x="863" y="392" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">mediante reposiciones escalonadas cada 7 a 8 días corridos.</text>
+
+  <text x="845" y="435" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Expansión con Reinversión:</tspan> Destinar el 70% del excedente neto del</text>
+  <text x="863" y="457" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Año 1 ($ 36,9M) para duplicar la profundidad del catálogo en el Año 2.</text>
+
+  <!-- Quadrant 3: Estrategias FA -->
+  <rect x="70" y="540" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.5" />
+  <rect x="70" y="540" width="715" height="6" rx="3" fill="#f59e0b" />
+  <text x="100" y="585" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="19" font-weight="800">ESTRATEGIAS FA (Fortalezas + Amenazas)</text>
+  <text x="100" y="610" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Maxi-Mini: Usar fortalezas para neutralizar amenazas macroeconómicas</text>
+
+  <text x="100" y="650" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Diferenciación por Calidad y UX:</tspan> Evitar la guerra destructiva de</text>
+  <text x="118" y="672" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">precios destacando curaduría de producto y atención por WhatsApp.</text>
+
+  <text x="100" y="715" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Acuerdos Mayoristas Escalonados:</tspan> Negociar lotes fijos con</text>
+  <text x="118" y="737" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">distribuidores autorizados para blindar el costo unitario ante inflación.</text>
+
+  <text x="100" y="780" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Cero Riesgo de Overselling:</tspan> Stock atómico en Firestore evita</text>
+  <text x="118" y="802" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">cancelaciones y penalizaciones de reputación ante picos de demanda.</text>
+
+  <!-- Quadrant 4: Estrategias DA -->
+  <rect x="815" y="540" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#f43f5e" stroke-width="1.5" />
+  <rect x="815" y="540" width="715" height="6" rx="3" fill="#f43f5e" />
+  <text x="845" y="585" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="19" font-weight="800">ESTRATEGIAS DA (Debilidades + Amenazas)</text>
+  <text x="845" y="610" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Mini-Mini: Minimizar debilidades internas y eludir riesgos del entorno</text>
+
+  <text x="845" y="650" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Fondo de Contingencia Activo:</tspan> Asignación mensual del 10%</text>
+  <text x="863" y="672" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">del presupuesto fijo ($ 1,55M/mes) para absorber oscilaciones de costos.</text>
+
+  <text x="845" y="715" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Cero Deuda Bancaria:</tspan> Autofinanciación con capital propio protege</text>
+  <text x="863" y="737" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">a la firma de tasas de interés activas asfixiantes (TNA &gt; 70%).</text>
+
+  <text x="845" y="780" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Sin Retiro de Dividendos en Año 1:</tspan> Política estricta de reinversión</text>
+  <text x="863" y="802" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">para blindar la solvencia y construir patrimonio neto societario.</text>
+</svg>

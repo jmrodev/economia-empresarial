@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="80" y="55" width="280" height="36" rx="18" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-width="1.5" />
+  <text x="220" y="79" fill="#34d399" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ARQUITECTURA DE SOFTWARE</text>
+
+  <text x="80" y="140" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="800">React 19 + Firebase vs. WordPress/WooCommerce</text>
+  <text x="80" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19">Fundamentación técnica aprobada por la cátedra • Eficiencia operativa e impacto comercial directo</text>
+
+  <!-- Big Benchmark Table Card -->
+  <rect x="80" y="215" width="1440" height="630" rx="14" fill="url(#card-grad)" stroke="#34d399" stroke-width="1.5" />
+
+  <!-- Table Header -->
+  <rect x="80" y="215" width="1440" height="65" rx="14" fill="#0b0f19" />
+  <text x="110" y="255" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">CRITERIO COMPARATIVO</text>
+  <text x="430" y="255" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="16" font-weight="700">WORDPRESS + WOOCOMMERCE</text>
+  <text x="830" y="255" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="800">JUANFER SHOP (REACT 19 + CLOUD)</text>
+  <text x="1270" y="255" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">IMPACTO EN EL NEGOCIO</text>
+  <line x1="80" y1="280" x2="1520" y2="280" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Row 1: LCP -->
+  <text x="110" y="325" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Tiempo de Carga (LCP)</text>
+  <text x="110" y="350" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Velocidad del primer render</text>
+  <text x="430" y="335" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="700">3,8 a 6,5 segundos</text>
+  <text x="430" y="360" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Sobrecarga por plugins PHP</text>
+  <text x="830" y="335" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">0,8 a 1,2 segundos</text>
+  <text x="830" y="360" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Bundle optimizado con Vite &amp; CDN</text>
+  <text x="1270" y="335" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">-42% tasa de rebote</text>
+  <text x="1270" y="360" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Aumento sustancial en conversión</text>
+  <line x1="110" y1="385" x2="1490" y2="385" stroke="#334155" stroke-width="1" />
+
+  <!-- Row 2: Hosting Cost -->
+  <text x="110" y="430" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Costo Servidor Mensual</text>
+  <text x="110" y="455" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Gasto fijo de infraestructura</text>
+  <text x="430" y="440" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$30 a $50 USD / mes</text>
+  <text x="430" y="465" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Servidor VPS/LAMP dedicado</text>
+  <text x="830" y="440" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">&lt; $5 USD / mes</text>
+  <text x="830" y="465" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Arquitectura Serverless on-demand</text>
+  <text x="1270" y="440" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Ahorro superior al 85%</text>
+  <text x="1270" y="465" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Menor presión sobre el Opex fijo</text>
+  <line x1="110" y1="490" x2="1490" y2="490" stroke="#334155" stroke-width="1" />
+
+  <!-- Row 3: Stock Sync -->
+  <text x="110" y="535" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Sincronización de Stock</text>
+  <text x="110" y="560" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Transacciones concurrentes</text>
+  <text x="430" y="545" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Polling Periódico</text>
+  <text x="430" y="570" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Riesgo crítico de overselling</text>
+  <text x="830" y="545" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Atómica en Milisegundos</text>
+  <text x="830" y="570" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Descuento indivisible en Firestore</text>
+  <text x="1270" y="545" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Cero cancelaciones</text>
+  <text x="1270" y="570" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Protege reputación ante picos</text>
+  <line x1="110" y1="595" x2="1490" y2="595" stroke="#334155" stroke-width="1" />
+
+  <!-- Row 4: Security -->
+  <text x="110" y="640" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Seguridad &amp; Blindaje</text>
+  <text x="110" y="665" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Vulnerabilidades de código</text>
+  <text x="430" y="650" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Elevada Vulnerabilidad</text>
+  <text x="430" y="675" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Inyecciones SQL y plugins rotos</text>
+  <text x="830" y="650" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Zero-Server Exposure</text>
+  <text x="830" y="675" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Reglas firestore.rules a nivel de campo</text>
+  <text x="1270" y="650" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Datos blindados</text>
+  <text x="1270" y="675" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Cumplimiento Ley 25.326</text>
+  <line x1="110" y1="700" x2="1490" y2="700" stroke="#334155" stroke-width="1" />
+
+  <!-- Row 5: UX -->
+  <text x="110" y="745" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Experiencia de Usuario (UX)</text>
+  <text x="110" y="770" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Navegación y carrito</text>
+  <text x="430" y="755" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Recargas de Página</text>
+  <text x="430" y="780" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Saltos visuales bruscos</text>
+  <text x="830" y="755" fill="#34d399" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Single-Page App Nativa</text>
+  <text x="830" y="780" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Carrito Drawer fluido en localStorage</text>
+  <text x="1270" y="755" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Sensación de App Móvil</text>
+  <text x="1270" y="780" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Fricción cero en el checkout</text>
+</svg>

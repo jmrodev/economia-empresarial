@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+    <rect width="1200" height="750" rx="20" fill="#0f172a" stroke="#1e293b" stroke-width="3" />
+    <rect width="1200" height="70" rx="20" fill="#1e293b" />
+    <circle cx="35" cy="35" r="7" fill="#ef4444" />
+    <circle cx="60" cy="35" r="7" fill="#eab308" />
+    <circle cx="85" cy="35" r="7" fill="#22c55e" />
+    <text x="130" y="41" fill="#ffffff" font-size="18" font-weight="700" font-family="sans-serif">CRM Educación - Listado General de Alumnos</text>
+    <rect x="1030" y="22" width="130" height="28" rx="14" fill="#3b82f6" opacity="0.25" />
+    <text x="1095" y="41" text-anchor="middle" fill="#3b82f6" font-size="12" font-weight="bold" font-family="sans-serif">Módulo Alumnos</text>
+    
+      <rect x="40" y="160" width="1120" height="45" rx="8" fill="#334155" />
+      <text x="60" y="188" fill="#e2e8f0" font-size="13" font-weight="bold" font-family="sans-serif">CÓDIGO</text>
+      <text x="200" y="188" fill="#e2e8f0" font-size="13" font-weight="bold" font-family="sans-serif">ESTUDIANTE</text>
+      <text x="490" y="188" fill="#e2e8f0" font-size="13" font-weight="bold" font-family="sans-serif">CURSO</text>
+      <text x="740" y="188" fill="#e2e8f0" font-size="13" font-weight="bold" font-family="sans-serif">ESTADO</text>
+      <text x="960" y="188" fill="#e2e8f0" font-size="13" font-weight="bold" font-family="sans-serif">CONDICIÓN</text>
+      
+      <g transform="translate(40, 220)">
+        <rect width="1120" height="42" rx="6" fill="#1e293b" />
+        <text x="20" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">ALU-0891</text>
+        <text x="160" y="26" fill="#f8fafc" font-size="15" font-weight="600" font-family="sans-serif">Martín Rodríguez</text>
+        <text x="450" y="26" fill="#cbd5e1" font-size="14" font-family="sans-serif">5to Año B</text>
+        <rect x="700" y="10" width="80" height="22" rx="11" fill="#065f46" />
+        <text x="740" y="25" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">Activo</text>
+        <text x="920" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">Cuota al día</text>
+      </g>
+    
+      <g transform="translate(40, 270)">
+        <rect width="1120" height="42" rx="6" fill="#0f172a" />
+        <text x="20" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">ALU-0892</text>
+        <text x="160" y="26" fill="#f8fafc" font-size="15" font-weight="600" font-family="sans-serif">Sofía Gómez</text>
+        <text x="450" y="26" fill="#cbd5e1" font-size="14" font-family="sans-serif">4to Año A</text>
+        <rect x="700" y="10" width="80" height="22" rx="11" fill="#065f46" />
+        <text x="740" y="25" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">Activo</text>
+        <text x="920" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">Pendiente</text>
+      </g>
+    
+      <g transform="translate(40, 320)">
+        <rect width="1120" height="42" rx="6" fill="#1e293b" />
+        <text x="20" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">ALU-0893</text>
+        <text x="160" y="26" fill="#f8fafc" font-size="15" font-weight="600" font-family="sans-serif">Lucas Fernández</text>
+        <text x="450" y="26" fill="#cbd5e1" font-size="14" font-family="sans-serif">5to Año B</text>
+        <rect x="700" y="10" width="80" height="22" rx="11" fill="#065f46" />
+        <text x="740" y="25" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">Regular</text>
+        <text x="920" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">Cuota al día</text>
+      </g>
+    
+      <g transform="translate(40, 370)">
+        <rect width="1120" height="42" rx="6" fill="#0f172a" />
+        <text x="20" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">ALU-0894</text>
+        <text x="160" y="26" fill="#f8fafc" font-size="15" font-weight="600" font-family="sans-serif">Valentina Díaz</text>
+        <text x="450" y="26" fill="#cbd5e1" font-size="14" font-family="sans-serif">3er Año C</text>
+        <rect x="700" y="10" width="80" height="22" rx="11" fill="#065f46" />
+        <text x="740" y="25" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">Activo</text>
+        <text x="920" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">Cuota al día</text>
+      </g>
+    
+      <g transform="translate(40, 420)">
+        <rect width="1120" height="42" rx="6" fill="#1e293b" />
+        <text x="20" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">ALU-0895</text>
+        <text x="160" y="26" fill="#f8fafc" font-size="15" font-weight="600" font-family="sans-serif">Mateo Benítez</text>
+        <text x="450" y="26" fill="#cbd5e1" font-size="14" font-family="sans-serif">6to Año A</text>
+        <rect x="700" y="10" width="80" height="22" rx="11" fill="#065f46" />
+        <text x="740" y="25" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">Inactivo</text>
+        <text x="920" y="26" fill="#94a3b8" font-size="14" font-family="sans-serif">Baja temporal</text>
+      </g>
+    
+    
+  </svg>

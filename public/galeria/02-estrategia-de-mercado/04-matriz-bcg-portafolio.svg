@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="70" y="45" width="280" height="36" rx="18" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5" />
+  <text x="210" y="69" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">PORTAFOLIO COMERCIAL</text>
+
+  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Matriz BCG del Catálogo (15 Productos)</text>
+  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Clasificación estratégica del inventario inicial según participación y tasa de crecimiento</text>
+
+  <!-- 4 BCG Quadrants Grid (width 715 each) -->
+  <!-- Quadrant 1: Estrellas -->
+  <rect x="70" y="195" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#f59e0b" stroke-width="1.5" />
+  <rect x="70" y="195" width="715" height="6" rx="3" fill="#f59e0b" />
+  <circle cx="110" cy="245" r="20" fill="#f59e0b" fill-opacity="0.2" />
+  <text x="110" y="252" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">⭐</text>
+  <text x="145" y="251" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Productos Estrella</text>
+  <text x="430" y="251" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Alto Crecimiento • Alta Rentabilidad</text>
+
+  <text x="100" y="295" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Wireless Headphones:</tspan> PVU $ 99.990 | Margen: $ 42.491 (42,5%)</text>
+  <text x="100" y="330" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Minimalist Leather Watch:</tspan> PVU $ 149.500 | Margen: $ 65.565 (43,9%)</text>
+  <text x="100" y="365" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Smart Coffee Maker:</tspan> PVU $ 89.990 | Margen: $ 34.791 (38,7%)</text>
+  <line x1="100" y1="395" x2="750" y2="395" stroke="#334155" stroke-width="1" />
+  <text x="100" y="430" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Estrategia Comercial:</text>
+  <text x="100" y="455" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Inversión prioritaria en pauta digital para sostener liderazgo y volumen.</text>
+  <text x="100" y="480" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Aportan el 41% de la ganancia bruta total del lote de arranque.</text>
+
+  <!-- Quadrant 2: Interrogantes -->
+  <rect x="815" y="195" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
+  <rect x="815" y="195" width="715" height="6" rx="3" fill="#38bdf8" />
+  <circle cx="855" cy="245" r="20" fill="#38bdf8" fill-opacity="0.2" />
+  <text x="855" y="252" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">❓</text>
+  <text x="890" y="251" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Productos Interrogante</text>
+  <text x="1170" y="251" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Alto Crecimiento • Baja Participación</text>
+
+  <text x="845" y="295" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Ergonomic Office Chair:</tspan> PVU $ 249.990 | Margen: $ 95.191 (38,1%)</text>
+  <text x="845" y="330" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Mechanical Keyboard:</tspan> PVU $ 129.990 | Margen: $ 54.591 (42,0%)</text>
+  <text x="845" y="365" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Running Sneakers:</tspan> PVU $ 119.990 | Margen: $ 49.291 (41,1%)</text>
+  <line x1="845" y1="395" x2="1495" y2="395" stroke="#334155" stroke-width="1" />
+  <text x="845" y="430" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Estrategia Comercial:</text>
+  <text x="845" y="455" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Artículos de ticket promedio alto; campañas de reviews y demostraciones.</text>
+  <text x="845" y="480" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Potencial de migrar a categoría Estrella al consolidar reputación.</text>
+
+  <!-- Quadrant 3: Vacas Lecheras -->
+  <rect x="70" y="540" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="1.5" />
+  <rect x="70" y="540" width="715" height="6" rx="3" fill="#10b981" />
+  <circle cx="110" cy="590" r="20" fill="#10b981" fill-opacity="0.2" />
+  <text x="110" y="597" fill="#10b981" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">🥛</text>
+  <text x="145" y="596" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Vacas Lecheras (Generadores de Caja)</text>
+  <text x="500" y="596" fill="#10b981" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Alta Cuota • Demanda Estable</text>
+
+  <text x="100" y="640" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Travel Backpack (20 u.):</tspan> PVU $ 69.990 | Margen: $ 26.791 (38,3%)</text>
+  <text x="100" y="670" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Stainless Steel Bottle (25 u.):</tspan> PVU $ 29.990 | Margen: $ 11.841 (39,5%)</text>
+  <text x="100" y="700" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Bluetooth Speaker (18 u.):</tspan> PVU $ 59.990 | Margen: $ 23.191 (38,7%)</text>
+  <text x="100" y="730" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#94a3b8">Básicos:</tspan> Denim Jacket, T-Shirt, Leather Wallet, Fitness Band</text>
+  <line x1="100" y1="755" x2="750" y2="755" stroke="#334155" stroke-width="1" />
+  <text x="100" y="790" fill="#10b981" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Estrategia Comercial:</text>
+  <text x="100" y="815" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Flujo de caja regular que financia el capital de trabajo de reposición continua.</text>
+
+  <!-- Quadrant 4: Perros -->
+  <rect x="815" y="540" width="715" height="325" rx="14" fill="url(#card-grad)" stroke="#f43f5e" stroke-width="1.5" />
+  <rect x="815" y="540" width="715" height="6" rx="3" fill="#f43f5e" />
+  <circle cx="855" cy="590" r="20" fill="#f43f5e" fill-opacity="0.2" />
+  <text x="855" y="597" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">🐕</text>
+  <text x="890" y="596" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="21" font-weight="700">Productos Perro (Estacionales)</text>
+  <text x="1210" y="596" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Baja Cuota • Ciclo Estacional</text>
+
+  <text x="845" y="640" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <tspan fill="#f8fafc" font-weight="700">Wool Winter Scarf (14 u.):</tspan> PVU $ 34.990 | Margen: $ 11.941</text>
+  <text x="845" y="670" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Artículo estacional fuera de ciclo invernal.</text>
+
+  <rect x="840" y="700" width="665" height="100" rx="10" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="860" y="728" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Mecanismo de Liquidación Automática en Plataforma:</text>
+  <text x="860" y="753" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Se activa el distintivo <tspan fill="#f59e0b" font-weight="700">"onSale"</tspan> en React con rebaja dinámica del 15% al 20%</text>
+  <text x="860" y="778" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">para rotar el lote en 15 días y liberar capital hacia productos Estrella.</text>
+
+  <text x="845" y="830" fill="#34d399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Resultado: Cero inmovilización o pérdida de mercadería en almacén Full.</text>
+</svg>

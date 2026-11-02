@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Badge & Header -->
+  <rect x="80" y="55" width="280" height="36" rx="18" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5" />
+  <text x="220" y="79" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">UNIT ECONOMICS &amp; EQUILIBRIO</text>
+
+  <text x="80" y="140" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="800">Margen de Contribución &amp; Punto de Equilibrio</text>
+  <text x="80" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19">Rentabilidad unitaria promedio y umbral de superación de costos fijos mensuales</text>
+
+  <!-- Big Highlights -->
+  <rect x="80" y="210" width="700" height="150" rx="16" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="2" />
+  <text x="120" y="255" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16" font-weight="600">MARGEN DE CONTRIBUCIÓN UNITARIO (MCU)</text>
+  <text x="120" y="305" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="46" font-weight="800">$ 26.411,76</text>
+  <text x="120" y="335" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="700">39,09% sobre el precio de venta (PVU medio $ 67.575)</text>
+
+  <rect x="820" y="210" width="700" height="150" rx="16" fill="url(#card-grad)" stroke="#10b981" stroke-width="2" />
+  <text x="860" y="255" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16" font-weight="600">PUNTO DE EQUILIBRIO OPERATIVO</text>
+  <text x="860" y="305" fill="#10b981" font-family="system-ui, sans-serif" font-size="46" font-weight="800">Mes 2 Superado</text>
+  <text x="860" y="335" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16" font-weight="600">467 u./mes (Fase 1) | 647 u./mes (Régimen formal pleno)</text>
+
+  <!-- 3 Detailed Column Cards -->
+  <rect x="80" y="390" width="455" height="440" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="80" y="390" width="455" height="6" rx="3" fill="#38bdf8" />
+  <text x="110" y="440" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Composición del Costo Variable</text>
+  <text x="110" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">CVu Promedio: <tspan fill="#f8fafc" font-weight="700">$ 41.163,36</tspan></text>
+  <line x1="110" y1="500" x2="505" y2="500" stroke="#334155" stroke-width="1" />
+  <text x="110" y="535" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">● Costo de Compra (CMV): $ 26.590 (64,6%)</text>
+  <text x="110" y="575" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">● Comisión Mercado Libre (13%): $ 9.387 (22,8%)</text>
+  <text x="110" y="615" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">● Flete Full Envío Gratis: $ 4.505 (10,9%)</text>
+  <text x="110" y="655" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">● Flete de Ingreso Inbound: $ 680 (1,7%)</text>
+  <line x1="110" y1="685" x2="505" y2="685" stroke="#334155" stroke-width="1" />
+  <text x="110" y="730" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Packaging Bonificado por ML: $ 0,00</text>
+
+  <rect x="572" y="390" width="455" height="440" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="572" y="390" width="455" height="6" rx="3" fill="#818cf8" />
+  <text x="602" y="440" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Punto de Equilibrio en Unidades</text>
+  <text x="602" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">Fórmula: Costos Fijos ÷ MCU</text>
+  <line x1="602" y1="500" x2="997" y2="500" stroke="#334155" stroke-width="1" />
+  <text x="602" y="540" fill="#818cf8" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Fase Inicial (Local + 3 Devs IT):</text>
+  <text x="602" y="570" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">467 unidades / mes</text>
+  <text x="602" y="595" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Ventas de Equilibrio: $ 31.557.581 ARS</text>
+
+  <text x="602" y="650" fill="#818cf8" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Régimen Pleno (5 empleados):</text>
+  <text x="602" y="680" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">647 unidades / mes</text>
+  <text x="602" y="705" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Ventas de Equilibrio: $ 43.721.102 ARS</text>
+
+  <rect x="1065" y="390" width="455" height="440" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
+  <rect x="1065" y="390" width="455" height="6" rx="3" fill="#10b981" />
+  <text x="1095" y="440" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Dinámica de Rotación &amp; Liquidez</text>
+  <text x="1095" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">Ciclo Ágil de Capital de Trabajo</text>
+  <line x1="1095" y1="500" x2="1490" y2="500" stroke="#334155" stroke-width="1" />
+  <text x="1095" y="540" fill="#10b981" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Rotación Mensual Requerida:</text>
+  <text x="1095" y="570" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">3,9 veces / mes</text>
+  <text x="1095" y="595" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Reposición cada 7 a 8 días corridos</text>
+
+  <text x="1095" y="650" fill="#10b981" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Acreditación Cobranzas:</text>
+  <text x="1095" y="680" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">24 a 48 hs hábiles</text>
+  <text x="1095" y="705" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">Reinversión inmediata en lotes mayoristas</text>
+</svg>
