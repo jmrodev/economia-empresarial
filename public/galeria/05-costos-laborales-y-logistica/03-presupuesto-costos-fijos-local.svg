@@ -5,96 +5,78 @@
       <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
     <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#1e293b" stroke-opacity="0.9" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stroke-opacity="0.95" stop-opacity="0.95" />
     </linearGradient>
   </defs>
 
   <rect width="1600" height="900" fill="url(#bg)" />
 
   <!-- Badge & Header -->
-  <rect x="70" y="45" width="280" height="36" rx="18" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5" />
-  <text x="210" y="69" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">PRESUPUESTO OPEX COMPARADO</text>
+  <rect x="70" y="45" width="310" height="36" rx="18" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1.5" />
+  <text x="225" y="69" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">PRESUPUESTO OPERATIVO MENSUAL</text>
 
-  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Cátedra vs. Presupuesto Real de Mercado</text>
-  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Fundamentación cuantitativa de la evolución de costos fijos mensuales entre la fase de arranque y el régimen pleno</text>
+  <text x="70" y="125" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Evolución de Costos Fijos Operativos (Opex)</text>
+  <text x="70" y="158" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="18">Estructura cuantitativa de costos fijos mensuales y puntos de equilibrio: Fase de Arranque vs. Régimen Pleno</text>
 
-  <!-- 3 Evolution Cards (width 460 each, x=70, 570, 1070) -->
-  <!-- Col 1: Catedra Base -->
-  <rect x="70" y="195" width="460" height="665" rx="14" fill="url(#card-grad)" stroke="#334155" stroke-width="1.5" />
-  <rect x="70" y="195" width="460" height="6" rx="3" fill="#64748b" />
-  <text x="100" y="240" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">ESCENARIO BASE DE CÁTEDRA</text>
-  <text x="100" y="290" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="36" font-weight="800">$ 3.740.000</text>
-  <text x="100" y="320" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">ARS / mes (estimación teórica plana)</text>
-  <line x1="100" y1="350" x2="490" y2="350" stroke="#334155" stroke-width="1" />
+  <!-- 2 Big Cards: width 700 each, x=70, 830 -->
+  <!-- Col 1: Fase Inicial Fundacional (Mes 1) -->
+  <rect x="70" y="195" width="700" height="665" rx="16" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="2" />
+  <rect x="70" y="195" width="700" height="8" rx="4" fill="#38bdf8" />
+  
+  <rect x="105" y="230" width="190" height="30" rx="6" fill="#38bdf8" fill-opacity="0.15" />
+  <text x="200" y="250" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">FASE ARRANQUE (MES 1)</text>
+  
+  <text x="105" y="315" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="48" font-weight="800">$ 12.314.925</text>
+  <text x="105" y="345" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="16">ARS / mes • Equipo técnico inicial (3 perfiles) + local comercial en Tandil</text>
+  <line x1="105" y1="375" x2="735" y2="375" stroke="#334155" stroke-width="1.5" />
 
-  <text x="100" y="385" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Limitaciones del cálculo teórico:</text>
-  <text x="100" y="415" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● Sueldos computados netos sin cargas</text>
-  <text x="100" y="437" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">patronales obligatorias de ley.</text>
+  <text x="105" y="415" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Desglose de Costos Fijos Mes 1:</text>
+  
+  <text x="105" y="450" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Nómina Técnica (3 Desarrolladores IT):</text>
+  <text x="125" y="475" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Sueldos bajo CCT 1696/23 Unión Informática con F.931 y cargas ($ 9.405.386,53 ARS).</text>
 
-  <text x="100" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● Omisión de aportes patronales F.931 (25%),</text>
-  <text x="100" y="502" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">alícuota de ART (4%) y seguro de vida.</text>
+  <text x="105" y="520" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Inmueble Comercial Operativo en Tandil:</text>
+  <text x="125" y="545" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Alquiler local ($ 700.000 ARS) + alarma monitoreada, mantenimiento e higiene ($ 150.000 ARS).</text>
 
-  <text x="100" y="545" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● Sin provisión mensual proporcional</text>
-  <text x="100" y="567" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">de SAC (Aguinaldo) ni plus vacacional.</text>
+  <text x="105" y="590" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Infraestructura Cloud &amp; Licencias de Software:</text>
+  <text x="125" y="615" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Servidores AWS/Firebase ($ 150.000 ARS) + OpenAI Team, M365 y GitHub ($ 185.000 ARS).</text>
 
-  <text x="100" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● Sin canon comercial real en Tandil ni</text>
-  <text x="100" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">servicios energéticos categorizados T2.</text>
+  <text x="105" y="660" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Servicios Operativos y Asesoría Contable:</text>
+  <text x="125" y="685" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Estudio contable/laboral S.A.S. ($ 320.000 ARS) + electricidad, gas e internet simétrico 4G ($ 185.000 ARS).</text>
 
-  <rect x="95" y="695" width="410" height="135" rx="10" fill="#0b0f19" stroke="#f43f5e" stroke-width="1" />
-  <text x="115" y="730" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Riesgo si no se rectifica:</text>
-  <text x="115" y="760" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Inviabilidad financiera inmediata por</text>
-  <text x="115" y="783" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">subestimar el 70% de costos de ley.</text>
+  <rect x="105" y="725" width="630" height="105" rx="12" fill="#0b0f19" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="135" y="760" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Punto de Equilibrio Inicial (Break-Even):</text>
+  <text x="135" y="800" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="28" font-weight="800">467 unidades / mes</text>
+  <text x="430" y="800" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="15">Facturación requerida: $ 31.557.581 ARS (~15 vtas/día)</text>
 
-  <!-- Col 2: Fase Inicial Fundacional -->
-  <rect x="570" y="195" width="460" height="665" rx="14" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5" />
-  <rect x="570" y="195" width="460" height="6" rx="3" fill="#38bdf8" />
-  <text x="600" y="240" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">FASE ARRANQUE (MES 1)</text>
-  <text x="600" y="290" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="36" font-weight="800">$ 12.314.925</text>
-  <text x="600" y="320" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">ARS / mes (equipo técnico inicial + local)</text>
-  <line x1="600" y1="350" x2="990" y2="350" stroke="#334155" stroke-width="1" />
+  <!-- Col 2: Régimen Pleno (Mes 3+) -->
+  <rect x="830" y="195" width="700" height="665" rx="16" fill="url(#card-grad)" stroke="#10b981" stroke-width="2.5" />
+  <rect x="830" y="195" width="700" height="8" rx="4" fill="#10b981" />
+  
+  <rect x="865" y="230" width="220" height="30" rx="6" fill="#10b981" fill-opacity="0.15" />
+  <text x="975" y="250" fill="#10b981" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">RÉGIMEN PLENO (MES 3 EN ADELANTE)</text>
+  
+  <text x="865" y="315" fill="#10b981" font-family="system-ui, sans-serif" font-size="48" font-weight="800">$ 17.063.797</text>
+  <text x="865" y="345" fill="#34d399" font-family="system-ui, sans-serif" font-size="16">ARS / mes • Nómina completa (5 dependientes) + local comercial + fondo de reserva</text>
+  <line x1="865" y1="375" x2="1495" y2="375" stroke="#334155" stroke-width="1.5" />
 
-  <text x="600" y="385" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Composición Operativa Mes 1:</text>
-  <text x="600" y="415" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">3 Desarrolladores IT:</strong> Sueldos formales</text>
-  <text x="600" y="437" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">con F.931 CCT 1696/23 ($ 9.405.386).</text>
+  <text x="865" y="415" fill="#10b981" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Estructura Plena en Régimen:</text>
+  
+  <text x="865" y="450" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Nómina Completa 5 Puestos Formales:</text>
+  <text x="885" y="475" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">3 Desarrolladores IT (CCT AGC) + 2 Comerciales Digitales (CCT FAECyS) con cargas ($ 13.722.543,57 ARS).</text>
 
-  <text x="600" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Inmueble Comercial:</strong> Alquiler local Tandil</text>
-  <text x="600" y="502" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">($ 700k) + seguridad y mantenimiento ($ 850k).</text>
+  <text x="865" y="520" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Base Comercial, Alquiler y Mantenimiento:</text>
+  <text x="885" y="545" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Alquiler local ($ 700k) + monitoreo, mantenimiento edilicio, higiene y reposición ($ 250.000 ARS).</text>
 
-  <text x="600" y="545" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Cloud &amp; Software IA:</strong> AWS serverless,</text>
-  <text x="600" y="567" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">Firebase, OpenAI Team y GitHub ($ 335k).</text>
+  <text x="865" y="590" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Cloud Serverless, Licencias y Estudio Contable:</text>
+  <text x="885" y="615" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">AWS/Firebase ($ 150k) + software IA ($ 185k) + asesoría contable integral S.A.S. ($ 320.000 ARS).</text>
 
-  <text x="600" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Estudio Contable &amp; Servicios:</strong> DDJJ,</text>
-  <text x="600" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">IVA, sueldos e internet simétrico ($ 505k).</text>
+  <text x="865" y="660" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">● Fondo de Reserva y Contingencias (10%):</text>
+  <text x="885" y="685" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="15">Previsión prudencial ante variaciones inflacionarias o imprevistos de mercado ($ 1.551.254,36 ARS).</text>
 
-  <rect x="595" y="695" width="410" height="135" rx="10" fill="#0b0f19" stroke="#38bdf8" stroke-width="1" />
-  <text x="615" y="730" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Punto de Equilibrio Inicial:</text>
-  <text x="615" y="765" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">467 unidades / mes</text>
-  <text x="615" y="795" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Ventas requeridas: $ 31.557.581 ARS</text>
-
-  <!-- Col 3: Regimen Pleno -->
-  <rect x="1070" y="195" width="460" height="665" rx="14" fill="url(#card-grad)" stroke="#10b981" stroke-width="2" />
-  <rect x="1070" y="195" width="460" height="6" rx="3" fill="#10b981" />
-  <text x="1100" y="240" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700">RÉGIMEN PLENO (MES 3+)</text>
-  <text x="1100" y="290" fill="#10b981" font-family="system-ui, sans-serif" font-size="36" font-weight="800">$ 17.063.797</text>
-  <text x="1100" y="320" fill="#34d399" font-family="system-ui, sans-serif" font-size="14">ARS / mes (5 dependientes + local Tandil)</text>
-  <line x1="1100" y1="350" x2="1490" y2="350" stroke="#334155" stroke-width="1" />
-
-  <text x="1100" y="385" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Estructura Plena en Régimen:</text>
-  <text x="1100" y="415" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">5 Puestos Formales:</strong> 3 desarrolladores IT</text>
-  <text x="1100" y="437" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">+ 2 comerciales con F.931 ($ 13.722.543).</text>
-
-  <text x="1100" y="480" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Local Comercial &amp; Seguridad:</strong> Alarma 24/7,</text>
-  <text x="1100" y="502" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">limpieza, mantenimiento y energía ($ 1.035k).</text>
-
-  <text x="1100" y="545" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Hardware &amp; Contingencia (10%):</strong> Previsión</text>
-  <text x="1100" y="567" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">ante volatilidad de costos ($ 1.651.254).</text>
-
-  <text x="1100" y="610" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">● <strong fill="#f8fafc">Sustentabilidad:</strong> El MCU ($26.411)</text>
-  <text x="1100" y="632" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14">absorbe los costos fijos vendiendo 647 u.</text>
-
-  <rect x="1095" y="695" width="410" height="135" rx="10" fill="#0b0f19" stroke="#10b981" stroke-width="1" />
-  <text x="1115" y="730" fill="#10b981" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Punto de Equilibrio Pleno:</text>
-  <text x="1115" y="765" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="800">647 unidades / mes</text>
-  <text x="1115" y="795" fill="#34d399" font-family="system-ui, sans-serif" font-size="13">Superado ampliamente desde el Mes 2</text>
+  <rect x="865" y="725" width="630" height="105" rx="12" fill="#0b0f19" stroke="#10b981" stroke-width="1.5" />
+  <text x="895" y="760" fill="#10b981" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Punto de Equilibrio Pleno (Break-Even):</text>
+  <text x="895" y="800" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="28" font-weight="800">647 unidades / mes</text>
+  <text x="1190" y="800" fill="#34d399" font-family="system-ui, sans-serif" font-size="15">Superado con creces desde el Mes 2 (~21 vtas/día)</text>
 </svg>
