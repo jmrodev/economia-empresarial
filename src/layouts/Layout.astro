@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title = 'JuanFer Shop S.A.S. - Presentación' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const folders = getGalleryData();
 const playlist = getPlaylist(folders);
 ---
@@ -104,7 +105,7 @@ const playlist = getPlaylist(folders);
 
     <!-- Barra flotante discreta de control para la presentación -->
     <div style="position: fixed; bottom: 1rem; right: 1.5rem; display: flex; align-items: center; gap: 0.5rem; z-index: 50;">
-      <a href="/" class="control-pill" title="Volver al inicio (Tecla Home o Escape)">
+      <a href={`${base}/`} class="control-pill" title="Volver al inicio (Tecla Home o Escape)">
         🏠 Módulos
       </a>
       <button id="toggle-autoplay" class="control-pill" title="Pausar o activar auto-recorrido (Barra Espaciadora)">
@@ -207,7 +208,7 @@ const playlist = getPlaylist(folders);
         } else if (e.key === 'f' || e.key === 'F') {
           toggleFullscreen();
         } else if (e.key === 'Escape' || e.key === 'Home') {
-          navigate('/');
+          navigate(playlist[0] || '/');
         }
       }
 
